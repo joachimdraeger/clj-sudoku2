@@ -1,14 +1,6 @@
 # clj-sudoku2
 
-A simple brute-force Sudoku solver. Currently only rows and columns are checked.
-
-## TODO
-
-* Check boxes
-
-## Usage
-
-...
+A brute-force Sudoku solver written in Clojure.
 
 ## License
 
