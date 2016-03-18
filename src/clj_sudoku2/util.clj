@@ -8,15 +8,15 @@
 (defn cell [grid x y]
   (nth (nth grid y) x))
 
-(defn doublicates-in-sorted? [l] 
+(defn duplicates-in-sorted? [l] 
   (if (empty? l)
     false
     (if (= (first l) (first (next l)))
       true
-      (doublicates-in-sorted? (next l))))) 
+      (duplicates-in-sorted? (next l))))) 
 
-(defn doublicates? [l]
-  (doublicates-in-sorted? (sort l)))
+(defn duplicates? [l]
+  (duplicates-in-sorted? (sort l)))
 
 
 ; Tries function f with each value from values while f returns nil

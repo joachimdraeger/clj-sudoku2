@@ -2,12 +2,14 @@
 (require '[clj-sudoku2.util :as util])
 
 (defn valid-seq? [row]
-  (not (util/doublicates? (filter #(not= % 0) row))))
+  ; ignores empty cells 
+  (not (util/duplicates? (filter #(not= % 0) row))))
 
 ; calculate the start coordinate for the box a given x or y coordinate points to
 (defn box-start [n] 
   (* (quot n 3) 3))
 
+; returns the values of the box at the given coordinate
 (defn box-seq [grid x y]
   (let [box-x (box-start x)
         box-y (box-start y)]
