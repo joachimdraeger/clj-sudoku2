@@ -16,7 +16,7 @@ Contains:
 
 ### Validate
 
-* Contains function to partially validate a Sudoku grid at the given coordinate.
+* Contains functions to partially validate a Sudoku grid at the given coordinate.
 * Only the column/row/box where the new value has been inserted gets checked.
 
 ### Util
