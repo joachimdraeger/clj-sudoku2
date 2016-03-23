@@ -2,7 +2,7 @@
 
 A brute-force Sudoku solver written in Clojure.
 
-## Package
+## Packages
 
 ### Core
 
